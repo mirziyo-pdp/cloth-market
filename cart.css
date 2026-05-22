@@ -1,0 +1,292 @@
+/* HEADER */
+#Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #E3E6F3;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s;
+}
+
+#navbar li a:hover {
+  color: #088178;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* HAMBURGER */
+#menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 799px) {
+
+  #menu-btn {
+    display: block;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: #E3E6F3;
+    flex-direction: column;
+    padding: 80px 20px;
+    transition: 0.3s;
+  }
+
+  /* MAGIC (JS o‘rniga) */
+  #menu-toggle:checked ~ #navbar {
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 20px;
+  }
+}
+/* CART SECTION */
+#cart {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#cart h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* PRODUCT CONTAINER */
+#cart .pro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* PRODUCT CARD */
+#cart .product-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+#cart .product-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+#cart .product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* DESCRIPTION */
+#cart .des {
+    flex: 1;
+}
+
+#cart .des h5 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#cart .des h4 {
+    color: #088178;
+    font-size: 18px;
+}
+
+/* QUANTITY */
+#cart .quantity {
+    font-size: 14px;
+}
+
+#cart .quantity input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/* SUBTOTAL */
+#cart .subtotal {
+    font-weight: 600;
+    color: #333;
+}
+
+/* REMOVE BUTTON */
+#cart .cart {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cart .cart:hover {
+    transform: scale(1.2);
+}
+
+/* TOTAL */
+.total-summary {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+.total-summary p {
+    font-size: 20px;
+}
+
+.total-summary span {
+    color: #088178;
+}
+
+/* BUTTON */
+.total-summary .normal {
+    background: #088178;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.total-summary .normal:hover {
+    background: #065f5b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #cart .product-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cart .product-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* FOOTER */
+#footer {
+    background: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 80px;
+    gap: 30px;
+}
+
+/* COLUMN */
+#footer .col {
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+}
+
+/* LOGO */
+#footer .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* HEADINGS */
+#footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* TEXT */
+#footer p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* LINKS */
+#footer a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+#footer a:hover {
+    color: #088178;
+    padding-left: 5px;
+}
+
+/* INSTALL IMAGES */
+#footer .install .row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#footer .install img {
+    width: 120px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* PAYMENT IMAGE */
+#footer .install > img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* COPYRIGHT */
+#footer .copyright {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+#footer .copyright p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 799px) {
+    #footer {
+        padding: 30px 20px;
+    }
+
+    #footer .col {
+        width: 100%;
+    }
+}

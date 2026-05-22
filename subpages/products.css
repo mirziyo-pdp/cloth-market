@@ -1,0 +1,277 @@
+
+#product-detail {
+    display: flex;
+    gap: 50px;
+    padding: 60px 80px;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+/* Gallery */
+.detail-gallery {
+    flex: 1;
+    min-width: 300px;
+}
+
+#mainImg {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    border: 1px solid #e1e1e1;
+    transition: 0.3s ease;
+}
+
+#mainImg:hover {
+    transform: scale(1.02);
+}
+
+.thumbs {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.thumbs img {
+    width: 90px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.thumbs img:hover {
+    border-color: #088178;
+    transform: translateY(-3px);
+}
+
+/* Product Info */
+.detail-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.detail-info h2 {
+    font-size: 34px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.detail-info h4 {
+    font-size: 28px;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+.detail-info p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Size & Color */
+.size,
+.color,
+.quantity {
+    margin-bottom: 20px;
+}
+
+.size span,
+.color span {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #222;
+}
+
+/* Hide radio buttons */
+.size input,
+.color input {
+    display: none;
+}
+
+/* Labels */
+.size label,
+.color label {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+/* Active effect */
+.size input:checked + label,
+.color input:checked + label {
+    background: #088178;
+    color: #fff;
+    border-color: #088178;
+}
+
+/* Quantity */
+.quantity label {
+    font-weight: 600;
+    color: #222;
+}
+
+.quantity input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Button */
+.normal {
+    display: inline-block;
+    background: #088178;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.normal:hover {
+    background: #066b63;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #product-detail {
+        flex-direction: column !important;
+        padding: 40px 20px;
+    }
+
+    .detail-info h2 {
+        font-size: 28px;
+    }
+
+    .detail-info h4 {
+        font-size: 24px;
+    }
+
+    .thumbs img {
+        width: 70px;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .detail-info h2 {
+        font-size: 30px;
+    }
+
+    .detail-info h4 {
+        font-size: 24px;
+    }
+
+    #mainImg {
+        max-width: 100%;
+    }
+
+    .thumbs img {
+        width: 75px;
+    }
+
+    .size label,
+    .color label {
+        padding: 7px 15px;
+        font-size: 13px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #product-detail {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .detail-gallery,
+    .detail-info {
+        width: 100%;
+    }
+
+    .detail-info {
+        margin-top: 20px;
+    }
+
+    .detail-info h2 {
+        font-size: 26px;
+    }
+
+    .detail-info h4 {
+        font-size: 22px;
+    }
+
+    .detail-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .thumbs {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .thumbs img {
+        width: 65px;
+    }
+
+    .size label,
+    .color label {
+        margin-top: 10px;
+    }
+
+    .normal {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    .quantity input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    #product-detail {
+        padding: 30px 15px;
+    }
+
+    .detail-info h2 {
+        font-size: 22px;
+    }
+
+    .detail-info h4 {
+        font-size: 20px;
+    }
+
+    .thumbs img {
+        width: 55px;
+    }
+
+    .size label,
+    .color label {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .normal {
+        font-size: 14px;
+    }
+}

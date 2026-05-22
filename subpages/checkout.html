@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Cara</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        #checkout {
+            display: flex;
+            gap: 40px;
+            padding: 60px 80px;
+            flex-wrap: wrap;
+        }
+
+        .checkout-form {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .checkout-form h2,
+        .order-summary h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .checkout-form input,
+        .checkout-form textarea,
+        .checkout-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .checkout-form textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .order-summary {
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .product-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .product-box img {
+            width: 80px;
+            border-radius: 6px;
+        }
+
+        .product-info h4 {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .product-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 14px;
+            background: #088178;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .checkout-btn:hover {
+            background: #066b63;
+        }
+
+        @media (max-width: 768px) {
+            #checkout {
+                padding: 40px 20px;
+                flex-direction: column;
+            }
+        }
+        /* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    #checkout {
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .checkout-form,
+    .order-summary {
+        min-width: 100%;
+    }
+
+    .order-summary {
+        margin-top: 20px;
+    }
+
+    .checkout-form h2,
+    .order-summary h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #checkout {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .checkout-form input,
+    .checkout-form textarea,
+    .checkout-form select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .product-box {
+        gap: 12px;
+    }
+
+    .product-box img {
+        width: 70px;
+    }
+
+    .product-info h4 {
+        font-size: 15px;
+    }
+
+    .product-info p {
+        font-size: 13px;
+    }
+
+    .summary-row {
+        font-size: 14px;
+    }
+
+    .checkout-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    #checkout {
+        padding: 30px 15px;
+    }
+
+    .checkout-form h2,
+    .order-summary h2 {
+        font-size: 22px;
+    }
+
+    .checkout-form input,
+    .checkout-form textarea,
+    .checkout-form select {
+        font-size: 13px;
+    }
+
+    .product-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-box img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .checkout-btn {
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="Header">
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="Cara" class="logo">
+        </a>
+    </header>
+
+    <!-- CHECKOUT -->
+    <section id="checkout">
+
+        <!-- LEFT -->
+        <div class="checkout-form">
+            <h2>Billing Details</h2>
+
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Phone Number">
+            <input type="text" placeholder="Street Address">
+
+            <select>
+                <option>Choose City</option>
+                <option>Tashkent</option>
+                <option>Samarkand</option>
+                <option>Bukhara</option>
+            </select>
+
+            <textarea placeholder="Additional Notes"></textarea>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="order-summary">
+            <h2>Your Order</h2>
+
+            <div class="product-box">
+                <img src="../img/products/f1.jpg" alt="">
+                <div class="product-info">
+                    <h4>Cara Shirt</h4>
+                    <p>$129 x 1</p>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <img src="../img/products/f2.jpg" alt="">
+                <div class="product-info">
+                    <h4>Classic Hoodie</h4>
+                    <p>$99 x 1</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$228</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>$10</span>
+            </div>
+
+            <div class="summary-row">
+                <strong>Total</strong>
+                <strong>$238</strong>
+            </div>
+
+            <button class="checkout-btn">
+                Place Order
+            </button>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

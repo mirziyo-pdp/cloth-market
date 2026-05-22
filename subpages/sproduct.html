@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail - Cara</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <!-- Header (same as main) -->
+    <header id="Header">
+        <a href="../index.html"><img src="../img/logo.png" alt="Cara" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#feature">Shop</a></li>
+                <li><a href="../index.html#product1">Blog</a></li>
+                <li><a href="../index.html#banner">About</a></li>
+                <li><a href="../index.html#sm-banner">Contact</a></li>
+                <li class="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping head-Cart"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="product-detail" class="section-p1">
+        <div class="detail-gallery">
+            <img src="../img/products/f6.jpg" id="mainImg" alt="Product Image" style="width:100%; max-width:400px;">
+            <div class="thumbs" style="display:flex; gap:10px; margin-top:10px;">
+                <img src="../img/products/f6.jpg" class="thumb" style="width:80px; cursor:pointer;"
+                    onclick="document.getElementById('mainImg').src=this.src;">
+                <img src="../img/products/f7.jpg" class="thumb" style="width:80px; cursor:pointer;"
+                    onclick="document.getElementById('mainImg').src=this.src;">
+                <img src="../img/products/f8.jpg" class="thumb" style="width:80px; cursor:pointer;"
+                    onclick="document.getElementById('mainImg').src=this.src;">
+            </div>
+        </div>
+        <div class="detail-info" style="margin-top:20px;">
+            <h2>Cara Classic Shirt</h2>
+            <h4>$129</h4>
+            <p>High‑quality cotton shirt with a modern cut. Perfect for casual and semi‑formal occasions.</p>
+            <div class="size" style="margin:15px 0;">
+                <span>Size:</span>
+                <input type="radio" name="size" id="sizeS"><label for="sizeS">S</label>
+                <input type="radio" name="size" id="sizeM"><label for="sizeM">M</label>
+                <input type="radio" name="size" id="sizeL"><label for="sizeL">L</label>
+            </div>
+            <div class="color" style="margin:15px 0;">
+                <span>Color:</span>
+                <input type="radio" name="color" id="colorRed"><label for="colorRed">Red</label>
+                <input type="radio" name="color" id="colorBlue"><label for="colorBlue">Blue</label>
+                <input type="radio" name="color" id="colorGreen"><label for="colorGreen">Green</label>
+            </div>
+            <div class="quantity" style="margin:15px 0;">
+                <label for="qty">Qty:</label>
+                <input type="number" id="qty" min="1" value="1" style="width:60px; margin-left:5px;">
+            </div>
+            <a href="cart.html" class="normal" style="display:inline-block; margin-top:10px;">Add to Cart</a>
+        </div>
+    </section>
+
+    <!-- Simple footer copy from main page -->
+    <footer id="footer">
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Policy</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="#newsLetter">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="app">
+                <img src="../img/pay/play.jpg" alt="play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../img/pay/pay.png" alt="pay">
+        </div>
+        <div class="copyright">
+            <p>©2023 Anurag Kumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
