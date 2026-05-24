@@ -1,84 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Graceful User Profile | Manshu Rasim</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirziyo | Frontend Developer</title>
+<link rel="stylesheet" href="Profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="Profile.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+   
 </head>
 
 <body>
-    <div class="profile-card">
-        <div class="profile-cover"></div>
 
-        <div class="avatar-wrapper">
-            <div class="avatar">
-                <img src="./photo_2026-05-24_13-07-55.jpg" alt="">
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="logo">Mirziyo<span>.</span></div>
+
+        <div class="nav-links">
+            <a href="#about">Men haqimda</a>
+            <a href="#goals">Maqsadlar</a>
+            <a href="#projects">Loyihalar</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h3>Salom, men</h3>
+
+            <h1>Frontend <span>Developer</span></h1>
+
+            <p>
+                Zamonaviy va chiroyli web saytlar yaratadigan frontend dasturchiman.
+                Minimal dizayn, kuchli animatsiyalar va professional interfeyslar
+                yaratishni yaxshi ko'raman.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    Bog'lanish
+                </button>
+
+                <button class="btn btn-outline">
+                    Loyihalarim
+                </button>
             </div>
         </div>
 
-        <div class="user-info">
-            <div class="user-name">
-                Abduraxmatov Mirziyo
-                <span class="verified-badge"><i class="fas fa-check-circle"></i></span>
-            </div>
-            <div class="user-title">
-                <i class="fas fa-palette"></i> Creative Director & Visual Artist
-            </div>
-            <div class="user-bio">
-                Crafting graceful digital experiences · Design philosopher · Spreading art through minimalism and
-                soulful storytelling.
-            </div>
+        <div class="hero-image">
+            <img src="./photo_2026-05-24_13-07-55.jpg" alt="">
         </div>
 
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">2.8K</div>
-                <div class="stat-label">FOLLOWERS</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">146</div>
-                <div class="stat-label">PROJECTS</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">480+</div>
-                <div class="stat-label">CONNECTIONS</div>
-            </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="section-title">
+            <h2>Men haqimda</h2>
+
+            <p>
+                Men kreativ frontend developer bo'lib,
+                foydalanuvchilar uchun zamonaviy va tezkor web saytlar yarataman.
+            </p>
         </div>
 
-        <div class="action-buttons">
-            <button class="btn btn-primary" id="followBtn">
-                <i class="fas fa-user-plus"></i> <span id="followText">Follow</span>
-            </button>
-            <button class="btn btn-outline" id="messageBtn">
-                <i class="fas fa-comment-dots"></i> Message
-            </button>
-            <button class="btn btn-outline" id="shareBtn">
-                <i class="fas fa-share-alt"></i> Share
-            </button>
+        <div class="about-container">
+
+            <div class="about-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+                <p>
+                    HTML, CSS va JavaScript yordamida responsive va zamonaviy
+                    saytlar yarataman.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-palette"></i>
+                <h3>UI Dizayn</h3>
+                <p>
+                    Minimal va professional interfeyslarni ishlab chiqishni
+                    yaxshi ko'raman.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Tezkorlik</h3>
+                <p>
+                    Saytlarning tez ishlashi va foydalanuvchilar uchun qulay
+                    bo'lishiga katta e'tibor beraman.
+                </p>
+            </div>
+
         </div>
 
-        <div class="interests-section">
-            <div class="section-title">
-                <i class="fas fa-heart" style="color:#f97316;"></i> PASSIONS & EXPERTISE
-            </div>
-            <div class="tags">
-                <span class="tag"><i class="fas fa-code"></i> UI/UX Design</span>
-                <span class="tag"><i class="fas fa-drawing"></i> Illustration</span>
-                <span class="tag"><i class="fas fa-camera"></i> Photography</span>
-                <span class="tag"><i class="fas fa-cube"></i> 3D Art</span>
-                <span class="tag"><i class="fas fa-pen-fancy"></i> Calligraphy</span>
-                <span class="tag"><i class="fas fa-music"></i> Jazz Vibes</span>
-            </div>
-            <a href="./index.html"><button class="btn btn-link" id="viewMoreBtn">Orqaga qaytish</button></a>
+    </section>
+
+    <!-- GOALS -->
+
+    <section class="goals" id="goals">
+
+        <div class="section-title">
+            <h2>Maqsadlarim</h2>
+
+            <p>
+                Kelajakdagi asosiy maqsadlarim va rivojlanish yo'nalishlarim.
+            </p>
         </div>
 
+        <div class="goal-boxes">
 
+            <div class="goal">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Katta Loyihalar</h3>
+                <p>
+                    Professional va xalqaro darajadagi web platformalar yaratish.
+                </p>
+            </div>
+
+            <div class="goal">
+                <i class="fas fa-globe"></i>
+                <h3>Freelance</h3>
+                <p>
+                    Dunyo bo'ylab mijozlar bilan ishlash va portfolio kengaytirish.
+                </p>
+            </div>
+
+            <div class="goal">
+                <i class="fas fa-rocket"></i>
+                <h3>Startup</h3>
+                <p>
+                    O'z startup loyihalarimni yaratish va rivojlantirish.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="section-title">
+            <h2>Loyihalarim</h2>
+
+            <p>
+                Men yaratgan zamonaviy web sayt va UI loyihalar.
+            </p>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+                </div>
+
+                <div class="project-content">
+                    <h3>E-Commerce</h3>
+
+                    <p>
+                        Zamonaviy online shop website dizayni va frontend qismi.
+                    </p>
+
+                    <a href="./index.html" class="project-btn">Ko'rish</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+                </div>
+
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        Shaxsiy portfolio va frontend developer landing page.
+                    </p>
+
+                    <a href="#" class="project-btn">Ko'rish</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+                </div>
+
+                <div class="project-content">
+                    <h3>Dashboard UI</h3>
+
+                    <p>
+                        Admin panel va analytics dashboard interfeysi.
+                    </p>
+
+                    <a href="#" class="project-btn">Ko'rish</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Mirziyo</h3>
+
+        <p>
+            Frontend Developer
+        </p>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-telegram"></i>
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 
